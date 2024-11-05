@@ -1,4 +1,4 @@
-import 'package:app_flutter/features/screens/sign_up_screen.dart';
+import 'package:app_flutter/modules/screens/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {

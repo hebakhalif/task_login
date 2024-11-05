@@ -1,5 +1,5 @@
-import 'package:app_flutter/features/screens/sign_in_scrren.dart';
-import 'package:app_flutter/features/widgets/customs/CustomClipper.dart';
+import 'package:app_flutter/modules/screens/sign_in_scrren.dart';
+import 'package:app_flutter/modules/widgets/customs/CustomClipper.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeScrren extends StatelessWidget {

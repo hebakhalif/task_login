@@ -1,10 +1,10 @@
-import 'package:app_flutter/features/widgets/customs/CustomClipper.dart';
-import 'package:app_flutter/features/widgets/customs/Custom_textfield.dart';
-import 'package:app_flutter/features/widgets/customs/custom_button.dart';
+import 'package:app_flutter/modules/widgets/customs/CustomClipper.dart';
+import 'package:app_flutter/modules/widgets/customs/Custom_textfield.dart';
+import 'package:app_flutter/modules/widgets/customs/custom_button.dart';
 import 'package:flutter/material.dart';
 
-class SignInScrren extends StatelessWidget {
-  const SignInScrren({super.key});
+class SignUpScreen extends StatelessWidget {
+  const SignUpScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,14 +29,14 @@ class SignInScrren extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      "Sign In ",
+                      "Sign UP ",
                       style: TextStyle(
                         fontSize: 30,
                         fontWeight: FontWeight.bold,
                         color: Colors.black54,
                       ),
                     ),
-                    const Text("sign in your Registered Account"),
+                    const Text("Registered with your email addrees"),
                     const SizedBox(
                       height: 20,
                     ),
@@ -46,26 +46,24 @@ class SignInScrren extends StatelessWidget {
                     ),
                     const CustomTextFormFieldPassword(),
                     const SizedBox(
-                      height: 20,
+                      height: 30,
                     ),
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: Padding(
-                        padding: const EdgeInsets.only(right: 34),
-                        child: Text(
-                          'Forget Password ?',
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodySmall!
-                              .copyWith(
-                                color: const Color.fromARGB(255, 229, 142, 134),
-                                fontSize: 16,
-                              ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 30),
+                      child: TextFormField(
+                        // controller: passwordController,
+                        keyboardType: TextInputType.visiblePassword,
+                        obscureText: true,
+                        decoration: InputDecoration(
+                          labelText: "Confirm Password",
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(20),
+                          ),
                         ),
                       ),
                     ),
                     const SizedBox(
-                      height: 200,
+                      height: 160,
                     ),
                     const CustomButton(),
                   ],
